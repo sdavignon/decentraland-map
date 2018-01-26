@@ -7,6 +7,10 @@
 	<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/rikmms/progress-bar-4-axios/master/dist/index.js"></script>
 	<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<style>
 		div.tooltip {
 			display: flex;
@@ -23,6 +27,17 @@
 			opacity: 1;
 			fill: #FFFFDD;
 		}
+.confirm_selection {
+    -webkit-transition: text-shadow 0.2s linear;
+    -moz-transition: text-shadow 0.2s linear;
+    -ms-transition: text-shadow 0.2s linear;
+    -o-transition: text-shadow 0.2s linear;
+    transition: text-shadow 0.2s linear;
+}
+.confirm_selection:hover {
+    text-shadow: 0 0 10px red; /* replace with whatever color you want */
+}
+
 	</style>
 </head>
 
@@ -31,9 +46,13 @@
 	</div>
 	
 <script type="text/javascript">
-	loadProgressBar()
+	loadProgressBar();
+	
  </script>
 <script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+$("#id-0x2b6247079ddd8e81b34093e911284253bd455ef6").addClass("confirm_selection");	
+	 </script>
 </body>
 
 </html>
